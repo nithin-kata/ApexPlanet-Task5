@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSmart Pro - Advanced Capstone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShopSmart Pro</h1>
+    <nav>
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="sortFilter">
+        <option value="default">Sort by</option>
+        <option value="priceAsc">Price: Low → High</option>
+        <option value="priceDesc">Price: High → Low</option>
+        <option value="nameAsc">Name: A → Z</option>
+        <option value="nameDesc">Name: Z → A</option>
+      </select>
+      <button id="homeBtn">Home</button>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- Modal for product details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> ShopSmart Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
